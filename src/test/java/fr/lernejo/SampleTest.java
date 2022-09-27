@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class SampleTest {
 
     @Test
-    void fact() {
+    void test_fact() {
         Sample sample = new Sample();
         Assertions.assertThat(sample.fact(0)).isEqualTo(1);
         Assertions.assertThat(sample.fact(1)).isEqualTo(1);
@@ -19,7 +19,7 @@ class SampleTest {
     }
 
     @Test
-    void op() {
+    void test_op() {
         Sample sample = new Sample();
         Assertions.assertThat(sample.op(Sample.Operation.ADD, 1, 2)).isEqualTo(3);
         Assertions.assertThat(sample.op(Sample.Operation.ADD, -1, 2)).isEqualTo(1);
